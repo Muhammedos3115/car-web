@@ -1,0 +1,53 @@
+.header{
+    width: 100%;
+    $white: #FFF;
+    padding-top: 60px;
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            margin: 0px auto;
+            width: 1240px;
+            &__logo{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                width: 20px;
+                height: 20px;
+                &__link{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+                    width: 20px;
+                    height: 20px;
+                    text-decoration: none;
+                    &__brand{
+                        color: $white;
+                        font-size: 19px;
+                        font-family: 'Exo';
+                        font-weight: 500;
+                    }
+            }
+        }
+            &__ul{
+                display: flex;
+                align-items: center;
+                column-gap: 48px;
+                &__li{
+                    list-style-type: none;
+                    &__a{
+                        text-decoration: none;
+                        color: $white;
+                        font-size: 16px;
+                        font-family: 'Exo';
+                        font-style: normal;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    .container{
+        width: 100%;
+        max-width: 1280px;
+        margin: 0px auto;
+    }

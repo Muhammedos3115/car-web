@@ -1,0 +1,83 @@
+.section1{
+    margin: 120px auto;
+    .about_section1{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 130px;
+        &__left{
+            width: 480px;
+            height: 321px;
+            background-image: url("../images/salon.svg");
+            flex-shrink: 0;
+            border-radius: 8px;
+            position: relative;
+            &__text{
+                width: 197px;
+                height: 104px;
+                background: rgba(255, 255, 255, 0.10);
+                border-radius: 20px;
+                position: absolute;
+                right: 0px;
+                bottom: -50px;
+                backdrop-filter: blur(8px);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                z-index: 1;
+                &__h1{
+                    font-size: 20px;
+                    font-family: 'Exo';
+                    color: #FFF;
+                    font-weight: 600;
+                    line-height: 28px;
+                }
+                &__p{
+                    width: 157px;
+                    font-family: 'Exo';
+                    font-size: 13px;
+                    color: #FFF;
+                    font-weight: 400;
+                    text-align: center;
+                    line-height: 18px;
+                }
+
+            }
+        }
+        &__right{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: start;
+            &__title{
+                width: 209px;
+                color: #F1F2F3;
+                font-weight: 600;
+                line-height: 140%;
+                font-family: "Exo";
+            }
+            &__text{
+                margin-top: 24px;
+                width: 401px;
+                color: #BABEC4;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+                font-family: "Exo";
+            }
+            &__btn{
+                margin-top: 48px;
+                width: 150px;
+                height: 50px;
+                background-color: #4177DC;
+                border-radius: 4px;
+                color: #FFF;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: "Exo";
+                border: none;
+            }
+        }
+    }
+}

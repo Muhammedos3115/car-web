@@ -1,0 +1,9 @@
+@import 'universal';
+@import 'header';
+@import 'hero';
+@import 'section1';
+@import 'section2';
+$bg-color: #0A0A0B;
+body{
+    background-color: $bg-color;
+}

@@ -1,0 +1,186 @@
+@mixin card{
+    display: flex;
+    flex-direction: column;
+    width: 258px;
+    height: 328px;
+    border-radius: 20px;
+    background-color: #111213;
+    padding: 36px 32px 50px 27px;
+    font-family: "Exo";
+    position: relative;
+}
+@mixin card-title{
+    font-weight: 600;
+    line-height: 140%;
+    color: #F1F2F3;
+}
+@mixin card-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #BABEC4;
+}
+@mixin card-img{
+    width: 180px;
+    height: 80.64px;
+    margin-left: 30px;
+    margin-top: 12px;
+}
+@mixin card-specifications{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+@mixin spec-x{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 140%;
+}
+@mixin price{
+    margin-top: 30px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+}
+@mixin btn{
+    width: 56px;
+    height: 48px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #4177DC;
+    border: none;
+    border-radius: 20px 0px 20px 0px;
+}
+.section2{
+    margin-top: 210px;
+    .about_section2{
+        width: 100%;
+        margin: 0px auto;
+        // border: 1px solid white;
+        &__title{
+            text-align: center;
+            margin: 0px auto;
+            width: 278px;
+            color: #F1F2F3;
+            font-weight: 600;
+            line-height: 140%;
+            font-family: 'Exo';
+        }
+        &__cards{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0px 100px;
+            margin-top: 64px;
+            padding-bottom: 100px;
+            &__card1{
+                @include card;
+                &__title{
+                    @include card-title;
+                }
+                &__stamp{
+                    @include card-text;
+                }
+                &__img{
+                    @include card-img;
+                }
+                &__specifications{
+                    @include card-specifications;
+                    margin-top: 20px;
+                    &__speed{
+                        @include spec-x;
+                    }
+                    &__acceleration{
+                        @include spec-x;
+                    }
+                    &__type{
+                        @include spec-x;
+                    }
+                }
+                &__price{
+                    @include price;
+                }
+                &__btn{
+                    @include btn;
+                }
+            }
+            &__card2{
+                @include card;
+                &__title{
+                    @include card-title;
+                }
+                &__stamp{
+                    @include card-text;
+                }
+                &__img{
+                    @include card-img;
+                }
+                &__specifications{
+                    @include card-specifications;
+                    margin-top: 20px;
+                    &__speed{
+                        @include spec-x;
+                    }
+                    &__acceleration{
+                        @include spec-x;
+                    }
+                    &__type{
+                        @include spec-x;
+                    }
+                }
+                &__price{
+                    @include price;
+                }
+                &__btn{
+                    @include btn;
+                }
+            }
+            &__card3{
+                @include card;
+                &__title{
+                    @include card-title;
+                }
+                &__stamp{
+                    @include card-text;
+                }
+                &__img{
+                    @include card-img;
+                }
+                &__specifications{
+                    @include card-specifications;
+                    margin-top: 20px;
+                    &__speed{
+                        @include spec-x;
+                    }
+                    &__acceleration{
+                        @include spec-x;
+                    }
+                    &__type{
+                        @include spec-x;
+                    }
+                }
+                &__price{
+                    @include price;
+                }
+                &__btn{
+                    @include btn;
+                }
+                }
+            }
+            &__circles{
+                width: 100px;
+                    margin: 0px auto;
+                &__icon{
+                    width: 38px;
+                    height: 8px;
+                }
+            }
+        }
+    }
